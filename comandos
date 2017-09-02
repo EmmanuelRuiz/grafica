@@ -7,4 +7,5 @@ $ php bin/console generate:bundle
 Crear Entidades
 /*mapear la base de datos a yml*/
 $ php bin/console doctrine:mapping:import BackendBundle yml
+$ php bin/console doctrine:generate:entities BackendBundle
 
