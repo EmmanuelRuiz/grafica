@@ -20,4 +20,7 @@ comando para actualizar la base de datos usando las entidades
 $ php bin/console doctrine:schema:update --force
 
 
+cmen
+composer require cmen/google-charts-bundle
+
 http://www.codedrinks.com/google-api-chart-ejemplo-de-grafica-de-barras-con-php-jquery-y-mysql/
