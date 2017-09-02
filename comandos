@@ -1,4 +1,10 @@
 Crear proyecto symfony
+$ composer create-project symfony/framework-standard-edition symfony/ "3.1.*"
 
-$ composer create-project symfony/framework-standard-edition symfony/ "3.3.*"
+Crear bundle 
+$ php bin/console generate:bundle
+
+Crear Entidades
+/*mapear la base de datos a yml*/
+$ php bin/console doctrine:mapping:import BackendBundle yml
 

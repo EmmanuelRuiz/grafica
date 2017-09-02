@@ -1,0 +1,31 @@
+BackendBundle\Entity\Tblventa:
+    type: entity
+    table: tblventas
+    id:
+        idventa:
+            type: integer
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        categoria:
+            type: string
+            nullable: false
+            length: 20
+            options:
+                fixed: false
+        mes:
+            type: string
+            nullable: false
+            length: 10
+            options:
+                fixed: false
+        total:
+            type: decimal
+            nullable: false
+            precision: 9
+            scale: 2
+    lifecycleCallbacks: {  }
