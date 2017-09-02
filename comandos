@@ -9,3 +9,15 @@ Crear Entidades
 $ php bin/console doctrine:mapping:import BackendBundle yml
 $ php bin/console doctrine:generate:entities BackendBundle
 
+Actualizar el mapeado de una tabla
+php bin/console doctrine:mapping:import BackendBundle yml --filter="Like"
+*Se tiene que condigurar el archivo orm.yml 
+
+Actualizar las entidades de la tabla
+php bin/console generate:doctrine:entities BackendBundle:Like
+
+comando para actualizar la base de datos usando las entidades
+$ php bin/console doctrine:schema:update --force
+
+
+http://www.codedrinks.com/google-api-chart-ejemplo-de-grafica-de-barras-con-php-jquery-y-mysql/
