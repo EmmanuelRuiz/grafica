@@ -1,0 +1,4 @@
+Crear proyecto symfony
+
+$ composer create-project symfony/framework-standard-edition symfony/ "3.3.*"
+
