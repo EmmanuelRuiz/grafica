@@ -5,7 +5,6 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-
 use CMEN\GoogleChartsBundle\GoogleCharts\Charts\PieChart;
 use CMEN\GoogleChartsBundle\GoogleCharts\Charts\Histogram;
 use CMEN\GoogleChartsBundle\GoogleCharts\Charts\ColumnChart;
@@ -14,23 +13,23 @@ class DefaultController extends Controller {
 
     public function indexAction(Request $request) {
         /*
-        $em = $this->getDoctrine()->getManager();
-        $db = $em->getConnection();
+          $em = $this->getDoctrine()->getManager();
+          $db = $em->getConnection();
 
-        $querye = "SELECT CASE WHEN (age BETWEEN 18 AND 30) THEN 'De 18 a 30' "
-                . "ELSE CASE WHEN(age BETWEEN 30 AND 40) THEN 'De 30 a 40' "
-                . "ELSE CASE WHEN(age BETWEEN 40 AND 50) THEN 'De 40 a 50'"
-                . " ELSE CASE WHEN(AGE BETWEEN 50 AND 60) THEN 'De 50 a 60'"
-                . " ELSE CASE WHEN(age BETWEEN 60 AND 70) THEN 'De 60 a 70' "
-                . "ELSE CASE WHEN(age BETWEEN 70 AND 80) THEN 'De 70 a 80'"
-                . " END END END END END END rango, COUNT(*) total FROM users GROUP BY rango;";
-        $stmt = $db->prepare($querye);
-        $params = array();
-        $stmt->execute($params);
+          $querye = "SELECT CASE WHEN (age BETWEEN 18 AND 30) THEN 'De 18 a 30' "
+          . "ELSE CASE WHEN(age BETWEEN 30 AND 40) THEN 'De 30 a 40' "
+          . "ELSE CASE WHEN(age BETWEEN 40 AND 50) THEN 'De 40 a 50'"
+          . " ELSE CASE WHEN(AGE BETWEEN 50 AND 60) THEN 'De 50 a 60'"
+          . " ELSE CASE WHEN(age BETWEEN 60 AND 70) THEN 'De 60 a 70' "
+          . "ELSE CASE WHEN(age BETWEEN 70 AND 80) THEN 'De 70 a 80'"
+          . " END END END END END END rango, COUNT(*) total FROM users GROUP BY rango;";
+          $stmt = $db->prepare($querye);
+          $params = array();
+          $stmt->execute($params);
 
-        $notification = $stmt->fetchAll();
+          $notification = $stmt->fetchAll();
 
-        */
+         */
         /**/
         $pieChart = new PieChart();
         $pieChart->getData()->setArrayToDataTable(
