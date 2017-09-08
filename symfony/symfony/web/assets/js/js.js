@@ -1,3 +1,6 @@
 $(document).ready(function(){
-    alert();
+  
 });
+ function graficar(){
+       alert("hola");
+   } 
